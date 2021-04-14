@@ -1,4 +1,4 @@
-# packages in environment at /Users/matthouk/anaconda3/envs/ethereum:
+# packages in environment at ~/anaconda3/envs/ethereum:
 #
 # Name                    Version                   Build  Channel
 alabaster                 0.7.12                   py37_0  
