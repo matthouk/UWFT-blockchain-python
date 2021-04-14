@@ -1,6 +1,7 @@
 import subprocess
 import json
 import os
+# from constants import *
 
 command = './derive -g --mnemonic=mnemonic --numderive=3 --coin=ETH --cols=path,address,privkey,pubkey --format=json'
 
