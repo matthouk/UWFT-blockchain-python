@@ -3,8 +3,7 @@ import json
 import os
 # from constants import *
 
-command = './derive -g --mnemonic=mnemonic --numderive=3 --coin=ETH --cols=path,address,privkey,pubkey --format=json'
-
+command = './derive -g --mnemonic=mnemonic --numderive=1 --coin=BTC --cols=path,address,privkey,pubkey --format=json'
 
 mnemonic = os.getenv('MNEMONIC-HW')
 p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
