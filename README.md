@@ -61,6 +61,6 @@ Ethereum keys are the same format on any network, so the Ethereum keys should wo
 
 - In `wallet.py`, import all constants: `from constants import *`
 
-- Use these anytime you reference these strings, both in function calls, and in setting object keys.
+![constants](Images/constants.png)
 
 
