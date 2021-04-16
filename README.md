@@ -25,36 +25,27 @@ Ethereum keys are the same format on any network, so the Ethereum keys should wo
 
 ## Dependencies
 
-- PHP must be installed on your operating system (any version, 5 or 7). Don't worry, you will *not* need to know any PHP.
-
+- Install PHP 
 - You will need to clone the [`hd-wallet-derive`](https://github.com/dan-da/hd-wallet-derive) tool.
-
 - [`bit`](https://ofek.github.io/bit/) Python Bitcoin library.
-
 - [`web3.py`](https://github.com/ethereum/web3.py) Python Ethereum library.
 
 
 ### Project setup
 
-- Create a project directory called `wallet` and `cd` into it.
+- Created a local directory called wallet. 
 
 - Clone the `hd-wallet-derive` tool into this folder and install it using the instructions on its `README.md`.
 
-- Create a symlink called `derive` for the `hd-wallet-derive/hd-wallet-derive.php` script into the top level project
-  directory like so: `ln -s hd-wallet-derive/hd-wallet-derive.php derive`
+- Created a link with ln to shorten the code needed to enable hd-wallet derive. Termed it *derive* 
 
-  This will clean up the command needed to run the script in our code, as we can call `./derive`
-  instead of `./hd-wallet-derive/hd-wallet-derive.php`.
-
-- Test that you can run the `./derive` script properly, use one of the examples on the repo's `README.md`
-
-- Create a file called `wallet.py` -- this will be your universal wallet script. You can use the starter code as a starting point.
+- Create a file called `wallet.py` -- this had pre-populated content from a starter file. 
 
 
 
 ### Setup constants
 
-- In a separate file, `constants.py`, set the following constants:
+- In a separate file, `constants.py`, added the following: 
   - `BTC = 'btc'`
   - `ETH = 'eth'`
   - `BTCTEST = 'btc-test'`
@@ -64,3 +55,11 @@ Ethereum keys are the same format on any network, so the Ethereum keys should wo
 ![constants](Images/constants.png)
 
 
+### Setup Mnemonic 
+- Created new mnemonic for this assignement. 
+- Saved it as an environmental variable, called "MNEMONIC-HW" 
+- Used dotenv library to call the mnemonic. 
+
+### Setup Mnemonic 
+- Tested out getting keys and addresses using a variable called "command" 
+![constants](Images/command.png)
